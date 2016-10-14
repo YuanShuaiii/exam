@@ -13,5 +13,5 @@
 *[第七题](./07.html)      演示：http://wheathead.site/exam/07.html<br>
 *[第八题](./08.html)      演示：http://wheathead.site/exam/08.html<br>
 *[第九题](./09.html)      演示：http://wheathead.site/exam/09.html<br>
-*[第十题](./10(iphone6).html)      演示：http://wheathead.site/exam/10.html<br>
+*[第十题](./10(iphone6).html)      演示：http://wheathead.site/exam/10(iphone).html<br>
 *[第十一题](./11.html)     演示：http://wheathead.site/exam/11.html<br>
