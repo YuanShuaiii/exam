@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!--<script src="js/jquery-ui.min.js"></script>-->
+    <!--<link rel="stylesheet" href="css/jquery-ui.min.css">-->
+    <!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">-->
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 50px;
+        }
+        button {
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+<div class="n1"></div>
+<button>click</button>
+<script>
+    $('button').click(function(){
+        $('div').css("backgroundColor", "red");
+    })
+</script>
+</body>
+</html>

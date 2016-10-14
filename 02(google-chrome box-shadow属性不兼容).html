@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <title>Document</title>
+    <style>
+        tr {
+            /*border: 1px solid green;*/
+            /*box-shadow: 10px 10px 10px red;*/
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <table border="1" cellspacing="0" cellpadding="5" width="300" height="200">
+        <tr>
+            <th>姓名</th>
+            <td>张三</td>
+            <td>李四</td>
+            <td>王五</td>
+        </tr>
+        <tr>
+            <th>班级</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>年级</th>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+    </table>
+</div>
+<script>
+    $('tr').mouseenter(function () {
+        $(this).css("-webkit-box-shadow", "00px 0px 10px red")
+    });
+    $('tr').mouseleave(function () {
+        $(this).css("-webkit-box-shadow", "00px 0px 0px red")
+    })
+</script>
+</body>
+</html>

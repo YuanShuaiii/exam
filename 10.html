@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile</title>
+    <style>
+        @font-face {font-family: 'iconfont';
+            src: url('ux_1476429236_027669/iconfont.eot'); /* IE9*/
+            src: url('ux_1476429236_027669/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('ux_1476429236_027669/iconfont.woff') format('woff'), /* chrome、firefox */
+            url('ux_1476429236_027669/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('ux_1476429236_027669/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        @font-face {font-family: 'iconfont';
+            src: url('ux_1476431649_9091177/iconfont.eot'); /* IE9*/
+            src: url('ux_1476431649_9091177/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('ux_1476431649_9091177/iconfont.woff') format('woff'), /* chrome、firefox */
+            url('ux_1476431649_9091177/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('ux_1476431649_9091177/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+        @font-face {font-family: 'iconfont';
+            src: url('ux_1476433315_115317/iconfont.eot'); /* IE9*/
+            src: url('ux_1476433315_115317/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('ux_1476433315_115317/iconfont.woff') format('woff'), /* chrome、firefox */
+            url('ux_1476433315_115317/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('ux_1476433315_115317/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            /*-webkit-text-stroke-width: 0.2px;*/
+            /*-moz-osx-font-smoothing: grayscale;*/
+            color: gray;
+            font-weight: 100;
+            position: absolute;
+            top: 28px;
+            left: 10px;
+        }
+        .iconfont2{
+            font-family:"iconfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;}
+        .head {
+            width: 100%;
+            height: 100px;
+            background-color: #1aad19;
+        }
+        .iconfont3 {
+            font-family:"iconfont" !important;
+            font-size:20px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+            position: absolute;
+            top: -20px;
+            margin-left: 5px;
+            /*font-size: 20px;*/
+            /*left:10px;*/
+        }
+        /*i {*/
+            /*position: absolute;*/
+            /*top: 28px;*/
+            /*left: 10px;*/
+        /*}*/
+        input {
+            /*margin: 0;*/
+            /*min-height: 2.2em;*/
+            /*border-radius: 5px;*/
+            text-align: left;
+            border: 0;
+            background-color: white;
+            -webkit-appearance: none;
+            -webkit-border-radius: inherit;
+            border-radius: 5px;
+            width: 250px;
+            height: 30px;
+            margin-top: 10px;
+            z-index: 500;
+        }
+        .bar {
+            margin-top: -16px;
+            width: 100%;
+            height: 40px;
+            background-color: #e9e9e9;
+        }
+        .bar ul {
+            margin-left: -30px;
+        }
+        .bar li {
+            width: 16.66666%;
+            list-style: none;
+            margin-left: 0px;
+            float: left;
+            line-height: 40px;
+            font-weight: 300;
+        }
+        .plus {
+            margin-top: 2px;
+            height: 35px;
+            width: 9.6666666%;
+            line-height: 35px;
+            font-size: 40px;
+            position: absolute;
+            right: 0;
+            color: #1b1b1b;
+            opacity: .7;
+            background-color: #e9e9e9;
+            text-align: center;
+            box-shadow: -3px 0px 1px gray;
+            font-weight: 100;
+        }
+        .a1 {
+            width: 90%;
+            height: 100px;
+            /*background-color: #3388cc;*/
+            position: relative;
+            margin: auto;
+            border-bottom: 1px solid gray;
+        }
+        .a1 p{
+            /*position: absolute;*/
+            font-size: 15px;
+            float: left;
+            margin-left: 36px;
+            margin-top: -8px;
+        }
+        .iconfont2 {
+            position: absolute;
+            left: 10px;
+            top: 70px;
+            color: red;
+        }
+        .b1 {
+            color: gray;
+            width: 25%;
+            float: left;
+            height: 45px;
+            text-align: center;
+            line-height: 70px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<body>
+<!--<div class="head" ><h1>标题</h1></div>-->
+<input type="text">
+<div data-role='page' id="page1">
+    <div data-role="header" data-position="fixed" style="
+    background-color: red;
+    color: white;
+"><h4 style="margin-left: 0;width: 100px;">今日头条</h4><h4 style="position: absolute;top: -15px;" ><i class="iconfont">&#xe604; 搜你</i><input data-role="none" type="text" class="in1" ></h4></div>
+    <div data-role="none" class="main">
+        <div class="bar">
+            <ul>
+                <li style="color: red">推荐</li>
+                <li>热点</li>
+                <li>本地</li>
+                <li>视频</li>
+                <li>社会</li>
+                <li>头条</li>
+            </ul>
+            <div class="plus">+</div>
+        </div>
+        <div class="newmain">
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+            <div class="a1">
+                <p style="font-size: 20px;margin-top: 5px;margin-left: 10px">习近平法律的合理是对方当时部分打个的的裂缝空间法术打击</p>
+                <i class="iconfont2">&#xe60e;</i>
+                <p>专题</p>
+                <p>65评论</p>
+                <p>2小时前</p>
+                <p style="margin-left:65px;margin-top:-4px;width:20px;text-align:center;line-height:10px;height:10px;border: 1px solid gray;border-radius: 5px">x</p>
+            </div>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div class="b1" style="color: hotpink"><i class="iconfont3">&#xe603;</i>首页</div>
+        <div class="b1"><i class="iconfont3">&#xe6d1;</i>视频</div>
+        <div class="b1"><i class="iconfont3">&#xe60a;</i>关注</div>
+        <div class="b1"><i class="iconfont3">&#xe641;</i>我的</div>
+    </div>
+</div>
+
+
+<script>
+    $(function () {
+        $(document).bind("mobileinit", function () {
+            $.mobile.defaultPageTransition = "fade" ;
+        });
+        $("input").attr('data-role','none');
+        $(".main").attr('data-role','none');
+    });
+
+</script>
+</body>
+</html>

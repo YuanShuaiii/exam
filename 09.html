@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript"></script>
+<body>
+
+    <div data-role='page' id="page1" style="background-color: #3388cc;font-size: 50px">
+        This is page 1
+        <a href="#page2" data-role="button">go to page 2</a>
+    </div>
+    <div data-role='page' id="page2" style="background-color: #dad55e;font-size: 50px">
+        This is page 2
+        <a href="#page1" data-role="button">go to page 1</a>
+    </div>
+
+<script>
+    $(document).bind("mobileinit", function () {
+        $.mobile.defaultPageTransition = "fade" ;
+    })
+</script>
+</body>
+</html>

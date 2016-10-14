@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <style>
+        .n1 {
+            width: 100px;
+            height: 100px;
+            background-color: #007fff;
+            /*border: 1px solid orangered;*/
+        }
+        .new {
+            width: 200px;
+            height: 200px;
+            background-color: #777620;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('button').button();
+            $('button').click(function () {
+                $('.n1').hide("shake",{direction: 'right'}, 2000,function () {
+                    console.log("OK");
+                })
+            });
+        });
+
+    </script>
+</head>
+<body>
+<button>click</button>
+<hr>
+<div class="n1"></div>
+</body>
+</html>

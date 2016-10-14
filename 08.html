@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile</title>
+</head>
+<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" media="screen" title="no title">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('ab').button({
+            inline: true,
+            theme: "b"
+        });
+        $('button').bind('tap', function(){
+            $.mobile.changePage('#page2');
+        })
+    })
+
+</script>
+<body>
+<div data-role='page'>
+    <div data-role="content">
+        <button data-icon="carat-l"  data-iconpos="right" type="button" name="button" style="border-radius: 30px">左箭头图标</button>
+        <button data-icon="carat-r"  data-iconpos="right" type="button" name="button" style="border-radius: 30px">右箭头图标</button>
+        <button data-icon="carat-u"  data-iconpos="right" type="button" name="button" style="border-radius: 30px">上箭头图标</button>
+        <button data-icon="carat-d"  data-iconpos="right" type="button" name="button" style="border-radius: 30px">下箭头图标</button>
+        <button data-icon="plus"  data-iconpos="right" type="button" name="button" style="border-radius: 30px">左箭头图标</button>
+        <button data-icon="minus"  data-iconpos="right" type="button" name="button" style="border-radius: 30px">左箭头图标</button>
+        <button data-icon="delete"  data-iconpos="right" type="button" name="button" style="border-radius: 30px">左箭头图标</button>
+        <button data-icon="check"   data-iconpos="right" type="button" name="button" style="border-radius: 30px">左箭头图标</button>
+    </div>
+</div>
+</body>
+</html>
