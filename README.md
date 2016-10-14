@@ -5,7 +5,7 @@
 *[第一题（1）](./1-jquery.html)<br>
 *[第一题（2）](./1-jqueryui.html)<br>
 *[第一题（3）](./1-jquerymobile.html)<br>
-*[第二题](./02.html)<br>
+*[第二题](./02(google-chrome box-shadow属性不兼容).html)<br>
 *[第三题](./03.html)<br>
 *[第四题](./04.html)<br>
 *[第五题](./05.html)<br>
