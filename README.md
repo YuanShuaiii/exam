@@ -15,3 +15,4 @@
 *[第九题](./09.html)      演示：http://wheathead.site/exam/09.html<br>
 *[第十题](./10(iphone6).html)      演示：http://wheathead.site/exam/10(iphone6).html<br>
 *[第十一题](./11.html)     演示：http://wheathead.site/exam/11.html<br>
+*[WeChat]  http://wheathead.site/exam/WeChat.html
